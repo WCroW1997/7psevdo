@@ -1,0 +1,114 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	margin: 20px auto;
+	max-width: 1024px;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	gap: 30px;
+}
+
+.link {
+	text-decoration: none;
+	font-size: 18px;
+	color: #000;
+	padding: 15px 30px;
+	border: 1px solid #000;
+	border-radius: 18px;
+}
+
+.link:hover {
+	background: #b07070;
+}
+
+.link:link {
+	color: #ff0000;
+}
+
+.link:visited {
+	color: #0f0;
+}
+
+.link:focus {
+	border: 2px solid #2475ff;
+}
+
+.link:active {
+	border: none;
+}
+
+.box {
+	background: #be9090;
+	width: 100px;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+}
+
+.box:nth-child(2n + 3) {
+	background: #65acc2;
+}
+
+.boxes {
+	width: 300px;
+	height: 300px;
+	background: #2f4ead;
+	border-radius: 30px;
+	position: relative;
+}
+
+/* .boxes1::before {
+	content: '';
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	background: #0f0;
+	top: 0;
+	left: 0;
+}
+
+.boxes1::after {
+	content: 'Some text after';
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	background: rgb(169, 49, 133);
+	bottom: 0;
+	right: 0;
+} */
+
+.boxes::after {
+	content: '';
+	background: rgb(75, 157, 75);
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	border-radius: 100%;
+	bottom: -35px;
+	left: 50%;
+	transform: translateX(-50%);
+	border: 10px solid #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+}
+
+.boxes1::after {
+	content: '1';
+}
+.boxes2::after {
+	content: '2';
+}
+.boxes3::after {
+	content: '3';
+}
